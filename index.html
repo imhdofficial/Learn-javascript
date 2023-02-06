@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <input id="inp1" type="text" placeholder="please enter 1st number">
+    <input id="inp2" type="text" placeholder="please enter 2nd number">
+    <button onclick="plus()">➕</button>
+    <button onclick="minus()">➖</button>
+    <button onclick="multiply()">X</button>
+    <button onclick="divaid()">➗</button>
+    <div id="answer"></div>   
+
+    
+    <div class="pt-5 mt-5"></div>
+
+
+
+
+
+ 
+        <script>
+        
+        // jQuery - javascript library
+            // bootstrap - css library
+        // parseInt is built in function
+
+        function plus(){
+                var x = parseInt(document.getElementById("inp1").value);
+                var y = parseInt(document.getElementById("inp2").value);
+                document.getElementById("answer").innerHTML = x+y;
+        }
+
+        function minus(){
+                var x = parseInt(document.getElementById("inp1").value);
+                var y = parseInt(document.getElementById("inp2").value);
+                document.getElementById("answer").innerHTML = x-y;
+        }
+
+        function multiply(){
+                var x = parseInt(document.getElementById("inp1").value);
+                var y = parseInt(document.getElementById("inp2").value);
+                document.getElementById("answer").innerHTML = x*y;
+        }
+
+        function divaid(){
+                var x = parseInt(document.getElementById("inp1").value);
+                var y = parseInt(document.getElementById("inp2").value);
+                document.getElementById("answer").innerHTML = x/y;
+        }
+
+        </script>
+
+
+      
+
+
+</body>
+</html>
